@@ -4,7 +4,7 @@
 # license information.
 # --------------------------------------------------------------------------
 # pylint: disable=unused-argument
-from azure.azure_table._generated.models import TableProperties
+from azure_table._generated.models import TableProperties
 from azure.core.exceptions import ResourceExistsError
 
 from ._shared.models import StorageErrorCode

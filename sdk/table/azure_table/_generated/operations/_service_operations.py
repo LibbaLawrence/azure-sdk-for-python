@@ -10,7 +10,7 @@ from azure.core.pipeline import PipelineResponse
 from azure.core.pipeline.transport import HttpRequest, HttpResponse
 
 
-from azure.azure_table._generated import models
+from azure_table._generated import models
 
 if TYPE_CHECKING:
     # pylint: disable=unused-import,ungrouped-imports

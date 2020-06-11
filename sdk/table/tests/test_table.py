@@ -9,7 +9,7 @@ import pytest
 import sys
 import locale
 import os
-from azure.azure_table import TableServiceClient, generate_account_sas
+from azure_table import TableServiceClient, generate_account_sas
 from time import time
 from wsgiref.handlers import format_date_time
 from datetime import (
@@ -17,9 +17,9 @@ from datetime import (
     timedelta,
 )
 
-from azure.azure_table._generated.models import AccessPolicy, QueryOptions
-from azure.azure_table._models import TableSasPermissions
-from azure.azure_table._shared.models import ResourceTypes, AccountSasPermissions
+from azure_table._generated.models import AccessPolicy, QueryOptions
+from azure_table._models import TableSasPermissions
+from azure_table._shared.models import ResourceTypes, AccountSasPermissions
 from azure.core.pipeline import Pipeline
 from azure.core.pipeline.policies import (
     HeadersPolicy,
@@ -27,7 +27,7 @@ from azure.core.pipeline.policies import (
 )
 
 from _shared.testcase import TableTestCase, GlobalStorageAccountPreparer
-from azure.azure_table._shared.authentication import SharedKeyCredentialPolicy
+from azure_table._shared.authentication import SharedKeyCredentialPolicy
 from azure.core.pipeline.transport import RequestsTransport
 from azure.core.exceptions import (
     HttpResponseError,
@@ -257,7 +257,7 @@ class StorageTableTest(TableTestCase):
 
         # Assert
 
-    @pytest.mark.skip("pending")
+    # @pytest.mark.skip("pending")
     @GlobalStorageAccountPreparer()
     def test_get_table_acl(self, resource_group, location, storage_account, storage_account_key):
         # Arrange
@@ -278,7 +278,7 @@ class StorageTableTest(TableTestCase):
             # self._delete_table(table)
             ts.delete_table(table.table_name)
 
-    @pytest.mark.skip("pending")
+    # @pytest.mark.skip("pending")
     @GlobalStorageAccountPreparer()
     def test_set_table_acl_with_empty_signed_identifiers(self, resource_group, location, storage_account,
                                                          storage_account_key):

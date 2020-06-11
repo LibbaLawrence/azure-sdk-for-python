@@ -1,6 +1,6 @@
 import kwargs as kwargs
-from azure.azure_table._generated.models import TableProperties
-from azure.azure_table._shared.response_handlers import return_context_and_deserialized, process_storage_error
+from azure_table._generated.models import TableProperties
+from azure_table._shared.response_handlers import return_context_and_deserialized, process_storage_error
 from azure.core.exceptions import HttpResponseError
 from azure.core.paging import PageIterator
 from ._generated.models import AccessPolicy as GenAccessPolicy

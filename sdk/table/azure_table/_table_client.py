@@ -1,14 +1,14 @@
 from urllib.parse import urlparse, quote
 
 import six
-from azure.azure_table._deserialize import deserialize_table_creation
-from azure.azure_table._generated import AzureTable
-from azure.azure_table._generated.models import TableProperties, AccessPolicy, SignedIdentifier
-from azure.azure_table._message_encoding import NoEncodePolicy, NoDecodePolicy
-from azure.azure_table._shared.base_client import StorageAccountHostsMixin, parse_query, parse_connection_str
-from azure.azure_table._shared.request_handlers import add_metadata_headers, serialize_iso
-from azure.azure_table._shared.response_handlers import process_storage_error
-from azure.azure_table._version import VERSION
+from azure_table._deserialize import deserialize_table_creation
+from azure_table._generated import AzureTable
+from azure_table._generated.models import TableProperties, AccessPolicy, SignedIdentifier
+from azure_table._message_encoding import NoEncodePolicy, NoDecodePolicy
+from azure_table._shared.base_client import StorageAccountHostsMixin, parse_query, parse_connection_str
+from azure_table._shared.request_handlers import add_metadata_headers, serialize_iso
+from azure_table._shared.response_handlers import process_storage_error
+from azure_table._version import VERSION
 from azure.core.exceptions import HttpResponseError
 from azure.core.tracing.decorator import distributed_trace
 

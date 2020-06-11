@@ -12,7 +12,7 @@ from io import open
 from setuptools import find_packages, setup  # type: ignore
 
 # Change the PACKAGE_NAME only to change folder and different name
-PACKAGE_NAME = "azure-table"
+PACKAGE_NAME = "azure_table"
 PACKAGE_PPRINT_NAME = "Azure Table"
 
 # a-b-c => a/b/c

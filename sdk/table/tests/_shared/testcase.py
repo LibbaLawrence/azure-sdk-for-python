@@ -10,8 +10,8 @@ import os.path
 import time
 from datetime import datetime, timedelta
 
-from azure.azure_table import generate_account_sas
-from azure.azure_table._shared.models import ResourceTypes, AccountSasPermissions
+from azure_table import generate_account_sas
+from azure_table._shared.models import ResourceTypes, AccountSasPermissions
 
 from pyparsing import basestring
 

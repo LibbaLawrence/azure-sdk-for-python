@@ -1,20 +1,20 @@
 import functools
 from urllib.parse import urlparse
 
-from azure.azure_table._generated import AzureTable
-from azure.azure_table._generated.models import TableProperties, TableServiceStats, TableServiceProperties, \
+from azure_table._generated import AzureTable
+from azure_table._generated.models import TableProperties, TableServiceStats, TableServiceProperties, \
     AccessPolicy, SignedIdentifier
-from azure.azure_table._models import TablePropertiesPaged, service_stats_deserialize, service_properties_deserialize
-from azure.azure_table._shared.base_client import StorageAccountHostsMixin, parse_connection_str, parse_query, \
+from azure_table._models import TablePropertiesPaged, service_stats_deserialize, service_properties_deserialize
+from azure_table._shared.base_client import StorageAccountHostsMixin, parse_connection_str, parse_query, \
     TransportWrapper
-from azure.azure_table._shared.models import LocationMode
-from azure.azure_table._shared.request_handlers import serialize_iso
-from azure.azure_table._shared.response_handlers import process_storage_error, return_headers_and_deserialized
-from azure.azure_table._version import VERSION
+from azure_table._shared.models import LocationMode
+from azure_table._shared.request_handlers import serialize_iso
+from azure_table._shared.response_handlers import process_storage_error, return_headers_and_deserialized
+from azure_table._version import VERSION
 from azure.core.exceptions import HttpResponseError
 from azure.core.paging import ItemPaged
 from azure.core.tracing.decorator import distributed_trace
-from azure.azure_table._table_client import TableClient
+from azure_table._table_client import TableClient
 from msrest.pipeline import Pipeline
 
 
